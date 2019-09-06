@@ -1,12 +1,21 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, StyleSheet } from 'react-native'
+import {createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import LoginScreen from './screens/LoginScreen';
+import HomeScreen from './screens/HomeScreen';
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
-      <View>
-        <Text> textInComponent </Text>
-      </View>
-    )
+      <AppStackNavigator />
+    );
   }
 }
+const AppStackNavigator = createStackNavigator({
+  Login: LoginScreen,
+  Home: HomeScreen
+});
+
+const AppNavigator = createAppContainer(AppStackNavigator);
+export default AppNavigator;
