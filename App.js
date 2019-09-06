@@ -26,7 +26,7 @@ import {
 
 const App = () => {
   return (
-    <View></View>
+    <View><Text></Text></View>
   );
 };
 
