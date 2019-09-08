@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Button } from 'react-native'
+import { Text, View, StyleSheet, Button } from 'react-native'
 
 class LoginScreen extends Component {
 
@@ -9,12 +9,23 @@ class LoginScreen extends Component {
 
     render() {
         return (
-            <View>
-                <Button title = "Go To Home Screen" 
-                onPress={() => this.props.navigation.navigate('Home')} />
+            <View style={styles.container}>
+                <Button  style = {styles.button} title = "Go To Home Screen" 
+                onPress={() => this.props.navigation.navigate('Home')}/>
+                    
             </View>
         )
     }
 }
+const styles= StyleSheet.create({
+    container:{
+        flex:1,
+        flexDirection:'row',
+        justifyContent:'center',
+        alignItems: 'center'
+
+    }
+})
+
 
 export default LoginScreen;
