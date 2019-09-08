@@ -3,7 +3,7 @@ import { Text, View, Button } from 'react-native'
 
 class LoginScreen extends Component {
 
-    static navigationOptions = { 
+    static navigationOptions = {
         header: null
     }
 
