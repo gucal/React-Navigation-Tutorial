@@ -6,7 +6,7 @@ import TabRouter from './TabRouter'
 export default class App extends Component {
   render() {
     return (
-        <TabRouter />
+        <Router />
     )
   }
 }

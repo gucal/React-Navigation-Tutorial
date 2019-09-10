@@ -2,17 +2,9 @@ import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 import {createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
-
 import LoginScreen from './screens/LoginScreen'
 import HomeScreen from './screens/HomeScreen'
 
-class Router extends Component {
-    render() {
-        return (
-            <AppNavigator />
-        )
-    }
-}
 const AppStackNavigator = createStackNavigator({
     Login: LoginScreen,
     Home: HomeScreen
